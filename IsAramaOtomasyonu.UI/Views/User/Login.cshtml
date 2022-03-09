@@ -1,0 +1,32 @@
+﻿@model UserLoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container ">
+    <div class="row justify-content-center mt-5">
+        <div class="col-5 ">
+
+            <div class="card mt-5">
+                <div class="card-header fs-4 text-center">Giriş Yapın</div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label"></label>
+                            <input asp-for="PhoneNumber" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" class="form-control">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input asp-for="IsRemember" class="form-check-input" value="true">
+                            <label asp-for="IsRemember" class="form-check-label"></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

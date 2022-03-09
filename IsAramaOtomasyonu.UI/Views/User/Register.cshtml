@@ -1,0 +1,39 @@
+﻿@model UserRegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container ">
+    <div class="row justify-content-center ">
+        <div class="col-8 ">
+            <div class="card mt-4">
+                <div class="card-header fs-4 text-center">İşveren Kayıt Ekranı</div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="CompanyName" class="form-label"></label>
+                            <input asp-for="CompanyName" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label"></label>
+                            <input asp-for="PhoneNumber" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label"></label>
+                            <textarea asp-for="Address" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" class="form-control">
+                        </div>
+                        <div  class="mb-3 alert-danger text-sm-center" asp-validation-summary="All">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kayıt Oluştur</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

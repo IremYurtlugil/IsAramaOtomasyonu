@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <ul class="list-group">
+                <li class="list-group-item ">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mt-2 mb-4">Pozisyon</h4>
+                    </div>
+
+                    <select class="form-select mt-2 mb-2" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Developer</option>
+                        <option value="2">Tester</option>
+                        <option value="3">Business Analyst</option>
+                    </select>
+                </li>
+                <li class="list-group-item ">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mt-2 mb-4">Çalışma Türü</h4>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Tam Zamanlı</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Yarı Zamanlı</label>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mt-2 mb-4">Yan Haklar</h4>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yol</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yemek</label>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">İlanları Filtrele</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-pills">
+                        <li class="offset-10 col-2  nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">İlanları Sırala</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ücrete Göre Artan</a></li>
+                                <li><a class="dropdown-item" href="#">Ücrete Göre Azalan</a></li>
+                                <li><a class="dropdown-item" href="#">En Yeni İlanlar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static">
+                                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                    <h3 class="mb-0">Featured post</h3>
+                                    <div class="mb-1 text-muted">Nov 12</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static">
+                                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                    <h3 class="mb-0">Featured post</h3>
+                                    <div class="mb-1 text-muted">Nov 12</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static">
+                                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                    <h3 class="mb-0">Featured post</h3>
+                                    <div class="mb-1 text-muted">Nov 12</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
